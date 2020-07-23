@@ -1,19 +1,10 @@
 # Define display_board that accepts a board and prints
 # out the current state.
-board = [" "," "," "," "," "," "," "," "," "]
 
 def display_board(board)
-  puts "   |   |   "
+  puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
-  puts "   |   |   "
+  puts " #{board[3]} | #{board[4]} | #{board[5]} "
   puts "-----------"
-  puts "   |   |   "
+  puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
-
-display_board(board[4] = "X")
-The first error I'm getting is:
-
-#display_board in 'lib/display_board.rb various game situations prints a board with an X in the center position
-     Failure/Error: expect(rows[2]).to eq("   | X |   ")
-       expected: "   | X |   "
-            got: "   |   |   "
